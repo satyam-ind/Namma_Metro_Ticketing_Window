@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1 class="text-3xl font-bold underline text-clifford">
+    
+  </h1>
+</body>
+
+<header class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-xl" a href=http://127.0.0.1:5500/index.html>Home</span>
+    </a>
+    <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400 flex flex-wrap items-center text-base justify-center">
+      <a class="mr-5 hover:text-gray-900" a href=https://english.bmrc.co.in/#/about-us>About Us</a>
+      <a class="mr-5 hover:text-gray-900" a href=https://english.bmrc.co.in/#/gallery> Gallery</a>
+      <a class="mr-5 hover:text-gray-900" a href=https://english.bmrc.co.in/#/gallery> Careers</a>
+      <a class="mr-5 hover:text-gray-900" a href=https://english.bmrc.co.in/#/contact-us> Contact Us</a>
+    </nav>
+    <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"> <a href="http://127.0.0.1:5000/admin">Admin View</a>
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+<hr>
+<section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+      <img class="lg:w-3/9 md:w-4/8 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://english.bmrc.co.in/images/banner04.jpg">
+      <div class="text-center lg:w-2/3 w-full">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Welcome to Namma Metro</h1>
+        <p class="mb-8 leading-relaxed">Bangalore Metro Rail Corporation Limited (BMRCL), a joint venture of Government of India and Government of Karnataka is a Special Purpose Vehicle entrusted with the responsibility of implementation of Bangalore Metro Rail Project.
+
+            Bangalore Metro, christened as "Namma Metro", not only adds to the beauty of Bengaluru skyline, but immensely adds to the comfort level of travel. Besides this, Namma Metro is a major environment friendly addition to the Bengaluru City as it significantly contributes to the reduction of carbon emissions.</p>
+        <div class="flex justify-center">
+          <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"><a href="https://en.wikipedia.org/wiki/Namma_Metro"> Explore More </a></button>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+
+
+<section class="text-gray-600 body-font relative">
+  <div class="absolute inset-0 bg-gray-300">
+    <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.55224307554!2d77.49085171689524!3d12.95429460015388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1668747462102!5m2!1sen!2sin"" style="filter: green(1) contrast(1.2) opacity(0.4);"></iframe>
+  </div>
+  <div class="container px-5 py-24 mx-auto flex">
+    <div class="lg:w-2/6 md:w-2/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+      <h2 class="text-gray-900 text-lg mb-1 font-medium title-font"> Namma Metro Fare Calculator </h2>
+      <p class="leading-relaxed mb-5 text-gray-600">Token Fare, Number of Stops, Line Change, Passengers Boarded & Passengers Alighted.</p>
+      <div class="relative mb-4">
+        <form method="post">
+        <label for="station" class="leading-7 text-sm text-gray-600" > Enter From Station </label>
+        
+          <select id="from" name="from" required class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+   <optgroup label="Purple Line">
+                <option>Kengeri</option>
+                  <option>Kengeri Bus Terminal</option>
+                    <option>Pattanagere</option>
+                      <option>Jnanabharathi</option>
+                        <option>Rajarajeshwari Nagar</option>
+                          <option>Nayandahalli</option>
+                            <option>Mysuru Road</option>
+                              <option>Deepanjali Nagara</option>
+                                <option>Attiguppe</option>
+                                  <option>Vijayanagara</option>
+                                    <option>Balagangadhara Natha Swamiji HOS</option>
+                                      <option>Magadi Road</option>
+                                        <option>City Railway Station</option>
+                                          <option>Majestic</option>
+                                            <option>Sir M. Visveshwaraya Station</option>
+                                              <option>Dr BR Ambedkar Vidhana Soudha</option>
+                                                <option>Cubbon Park Sri Chamarajendra Park</option>
+                                                  <option>MG Road</option>
+                                                    <option>Trinity</option>
+                                                      <option>Halasuru</option>
+                                                        <option>Indiranagara</option>
+                    <option>Swami Vivekananda Road
+                    <option>Baiyappanahalli
+                    <optgroup label="Green Line">
+                      <option>Nagasandra</option>
+                      <option>Dasarahalli</option>
+                      <option>Jalahalli</option> 
+                        <option>Peenya Industry</option> 
+                      <option>Peenya</option> 
+                        <option>Goraguntepalya</option> 
+                          <option>Yeshwanthpur</option> 
+                            <option>Sandal Soap Factory</option> 	
+                              <option>Mahalakshmi</option> 
+                                <option>Rajajinagar</option> 
+                                  <option>Mahakavi Kuvempu Road</option> 
+                                    <option>Srirampura</option> 
+                                      <option>Sampige Road</option> 
+                                        <option>Majestic</option> 
+                                          <option>Chikpete</option> 
+                                            <option>Krishna Rajendra Market</option> 
+                      <option>National Colleg</option> 
+                      <option>Lalbagh Botanical Garden</option> 
+                      <option>South End Circle</option> 
+                        <option>Jayanagar</option> 
+                          <option>Rashtreeya Vidyalaya Road</option> 
+                            <option>Banashankari</option> 
+                              <option>Jaya Prakash Nagar</option> 
+                                <option>Yelachenahalli</option> 
+                                  <option>Konanakunte Cross</option> 
+                      <option>Doddakallasandra</option> 
+                      <option>Vajarahalli</option> 
+                      <option>Thalaghattapura</option> 
+                        <option>Silk Institute</option> 
+                    </optgroup>
+                </optgroup>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                  <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                </div>
+                </div>
+                
+      <div class="relative mb-4">
+        <label for="email" class="leading-7 text-sm text-gray-600"> Enter To Station </label>
+        <select id="to" name="to" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+            <optgroup label="Green Line">
+              <option>Nagasandra</option>
+              <option>Dasarahalli</option>
+              <option>Jalahalli</option> 
+                <option>Peenya Industry</option> 
+              <option>Peenya</option> 
+                <option>Goraguntepalya</option> 
+                  <option>Yeshwanthpur</option> 
+                    <option>Sandal Soap Factory</option> 	
+                      <option>Mahalakshmi</option> 
+                        <option>Rajajinagar</option> 
+                          <option>Mahakavi Kuvempu Road</option> 
+                            <option>Srirampura</option> 
+                              <option>Sampige Road</option> 
+                                <option>Majestic</option> 
+                                  <option>Chikpete</option> 
+                                    <option>Krishna Rajendra Market</option> 
+              <option>National Colleg</option> 
+              <option>Lalbagh Botanical Garden</option> 
+              <option>South End Circle</option> 
+                <option>Jayanagar</option> 
+                  <option>Rashtreeya Vidyalaya Road</option> 
+                    <option>Banashankari</option> 
+                      <option>Jaya Prakash Nagar</option> 
+                        <option>Yelachenahalli</option> 
+                          <option>Konanakunte Cross</option> 
+              <option>Doddakallasandra</option> 
+              <option>Vajarahalli</option> 
+              <option>Thalaghattapura</option> 
+                <option>Silk Institute</option>
+                <optgroup label="Purple Line">
+                <option>Kengeri</option>
+                  <option>Kengeri Bus Terminal</option>
+                    <option>Pattanagere</option>
+                      <option>Jnanabharathi</option>
+                        <option>Rajarajeshwari Nagar</option>
+                          <option>Nayandahalli</option>
+                            <option>Mysuru Road</option>
+                              <option>Deepanjali Nagara</option>
+                                <option>Attiguppe</option>
+                                  <option>Vijayanagara</option>
+                                    <option>Balagangadhara Natha Swamiji HOS</option>
+                                      <option>Magadi Road</option>
+                                        <option>City Railway Station</option>
+                                          <option>Majestic</option>
+                                            <option>Sir M. Visveshwaraya Station</option>
+                                              <option>Dr BR Ambedkar Vidhana Soudha</option>
+                                                <option>Cubbon Park Sri Chamarajendra Park</option>
+                                                  <option>MG Road</option>
+                                                    <option>Trinity</option>
+                                                      <option>Halasuru</option>
+                                                        <option>Indiranagara</option>
+            
+            </optgroup>
+            </select>
+           
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+            </div>
+            </div>
+      <button type="submit" class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Details</button>
+      <p class="text-xs text-gray-500 mt-3">
+        <h2>{{price}}</h2><br>
+        {% for station in route %}
+        <p>{{station}}</p>
+        {% endfor %}
+      </p>
+    <a href="/" style="border: 3px #000 solid;">Check Another Route</a>
+    </form>
+    </div>
+  </div>
+</section>
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center"> Top Users </h1>
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 md:w-1/2 w-full">
+        <div class="h-full bg-gray-100 p-8 rounded">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+            <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+          </svg>
+          <p class="leading-relaxed mb-6">Sadanand Gulwadi launched his career in academia in 1992, when he joined the faculty of Electronics Engineering at Norfolk State University, Norfolk, Virginia, USA after graduating with a doctorate in semiconductor materials and devices from George Mason University, Fairfax, Virginia, USA. </p>
+          <a class="inline-flex items-center">
+            <img alt="testimonial" src="https://www.iiitb.ac.in/includefiles/members/medium/Sadanand-Gulwai2.jpg" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+            <span class="flex-grow flex flex-col pl-4">
+              <span class="title-font font-medium text-gray-900"> Dr Sadanand Gulwadi</span>
+              <span class="text-gray-500 text-sm"> Course Instructor </span>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/2 w-full">
+        <div class="h-full bg-gray-100 p-8 rounded">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+            <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+          </svg>
+          <p class="leading-relaxed mb-6">Working in an Institution has been really interesting for me. Learning new things everyday is my energy dose. I have done my bachelor's degree in Electronics and Communication Engineering. I have completed my Post Graduation in Communication Systems.</p>
+          <a class="inline-flex items-center">
+            <img alt="testimonial" src="https://media-exp1.licdn.com/dms/image/C5603AQGi--KH3p91Iw/profile-displayphoto-shrink_800_800/0/1664118572195?e=1674086400&v=beta&t=1DjCxBBgXxLT3pNmkpF2rVxOJsi3UMltpCj_67V1NkQ" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+            <span class="flex-grow flex flex-col pl-4">
+              <span class="title-font font-medium text-gray-900">Benita Roy</span>
+              <span class="text-gray-500 text-sm"> Teaching Fellow </span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</html>

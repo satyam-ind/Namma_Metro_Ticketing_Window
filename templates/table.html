@@ -1,0 +1,21 @@
+<div class="flex flex-col">
+    <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+      <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+        <div class="overflow-hidden">
+          
+          <h1>Passengers Borded</h1>
+          {% for i in from_s_dict.keys() %}
+
+          <p>{{i}} : {{from_s_dict[i]}}</p>
+          {% endfor %}
+
+
+          <h1>Passengers Aligted</h1>
+          {% for i in to_s_dict.keys() %}
+
+          <p>{{i}} : {{to_s_dict[i]}}</p>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
